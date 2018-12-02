@@ -1,4 +1,11 @@
 
+function resize_video(popup_name) {
+	var video = $("#" + popup_name).find('video').get(0);
+	video.play();
+	setTimeout(function() {
+		video.pause();
+	}, 300);
+}
 
 $(function() {
 
@@ -7,7 +14,7 @@ $(function() {
         $(e.relatedTarget).find('video').get(0).play();
     });
 
-    $('#carousel').bind('slid.bs.carousel', function(e) {
+    $('#carousel').bind('slide.bs.carousel', function(e) {
         $('video').not('.active > div > video').each(function() {
             $(this).get(0).pause();
         });

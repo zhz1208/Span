@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <title>Surveillance</title>
 
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Mono|Nunito" rel="stylesheet">
+
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
@@ -13,54 +15,82 @@
 
     <body>
         <div class="bg">
-            <div class="nav">
-                
-            </div>
+            <header class='main-header'>
+                <div class="menu-wrap">
+                    <!-- Logo container -->
+                    <a href='https://maxbernard.design' class="logo-wrap">
+                        <img class="logo" src="nav_img/span.svg" alt="Logo" >
+                    </a>
+
+
+                    <!-- When this is checked, nav menu is dropped -->
+                    <input type='checkbox' id='nav-tog'>
+
+                    <!-- Hamburger btn -->
+                    <label for='nav-tog'  class="drop-trigger">
+                        <!-- Hamburg bars -->
+                        <span class="btn-bar top"></span>
+                        <span class='btn-bar middle'></span>
+                        <span class='btn-bar bottom'></span>
+                    </label>
+
+                    <!-- Menu -->
+                    <nav class="main-nav">
+                        <!-- This covers the whole background of the dropped menu -->
+                        <label for='nav-tog' class='nav-revert'></label>
+
+                        <!-- Menu items -->
+                        <a href='#portfolio' class="nav-item">
+                            <img class="logo" src="nav_img/sur_act.svg" alt="Logo" >
+                        </a>
+                        <a href='#bio' class="nav-item">
+                            <img class="logo" src="nav_img/te.svg" alt="Logo" >
+                        </a>
+                        <a href='#contact' class="nav-item">
+                            <img class="logo" src="nav_img/id.svg" alt="Logo" >
+                        </a>
+                    </nav>
+                </div>
+            </header>   
             <div class="gallery">
                 <!--Juan-->
-                <div class="button" id="b1">
-                    <a href="#juan">juan pablo</a>
-                    <img src="http://www.fillmurray.com/g/300/300"/>
-                </div>
+                <figure class="button" id="b1"><img src="../Surveillance/img/juan/object.png"/>
+                    <figcaption>
+                        <h3>JUAN PABLO RAHAL SOTO</h3>
+                        <h4>CABAZON DINOSAURS PLAQUE</h4>
+                    </figcaption><a href="#juan"></a>
+                </figure>
                 <div class="popup" id="juan">
                     <div class="popup-inner">                               
                         <div class="popup__text">
                             <h1>Server Map</h1>
-                            <h2>Juan Pablo</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+                            <h2>Juan Pablo Rahal Soto</h2>
+                            <p>Every movement we make is tracked on a daily basis. Consciously or unconsciously, we acquire objects that have the inherent ability to surveil us. When we choose to buy a phone or a watch, we are implicitly accepting the inevitability that we’ll be tracked, and elect to be a data generator in this web of surveillance. Server Map is a visualization of seven days in the life of a server in a San Francisco restaurant called Commonwealth. Data is visualized in the form of overlapped text and imagery. It is a record of others’ desires and the physical movements (by miles or human steps) that happen in what is classified as a single pin by the GPS, a satellite-based radio navigation system owned by the United States government and operated by the United States Air Force "for peaceful civil, commercial, and scientific uses worldwide</p>
                         </div>  
 
-                        <!--slider-->
+<!--slider-->
                         <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel" data-slide-to="1"></li>
-                                <li data-target="#carousel" data-slide-to="2"></li>
-                                <li data-target="#carousel" data-slide-to="3"></li>
-                            </ol>
+                            <!--
+<ol class="carousel-indicators">
+<li data-target="#carousel" data-slide-to="0" class="active"></li>
+<li data-target="#carousel" data-slide-to="1"></li>
+<li data-target="#carousel" data-slide-to="2"></li>
+</ol>
+-->
 
                             <!-- Carousel items -->
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="slide-content">
                                         <video poster="#" webkit-playsinline id="bgvid" controls>
-                                            <!--                                                    <source src="http://192.241.175.50/videos/boston.webm" type="video/webm">-->
-                                            <source src="video/huizhong.mp4" type="video/mp4">
+                                            <source src="video/juan.mp4" type="video/mp4">
                                         </video>
-                                        <!--
-<div class="slide-overlay door">
-<div class='title'> Slide 1 </div>
-<div class="description"> The First Description </div>
-</div>
--->
                                     </div>
 
                                 </div>
                                 <div class="item">
                                     <div class="slide-content">
-                                        <video poster="http://192.241.175.50/videos/boston.jpg" webkit-playsinline id="bgvid" loop>
-                                            <source src="http://192.241.175.50/videos/boston.webm" type="video/webm">
-                                            <source src="http://192.241.175.50/videos/boston.mp4" type="video/mp4">
+                                        <video poster="img/juan/juan%201.jpg" webkit-playsinline id="bgvid" loop>
                                         </video>
                                         <div class="slide-overlay door">
                                             <div class='title'> Slide 2 </div>
@@ -68,82 +98,63 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item">
-                                    <div class="slide-content">
-                                        <video poster="http://192.241.175.50/videos/split.jpg" webkit-playsinline id="bgvid" loop>
-                                            <source src="http://192.241.175.50/videos/split.webm" type="video/webm">
-                                            <source src="http://192.241.175.50/videos/split.mp4" type="video/mp4">
-                                        </video>
-                                        <div class="slide-overlay door">
-                                            <div class='title'>Slide 3</div>
-                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="slide-content">
-                                        <video poster="http://192.241.175.50/videos/samo.jpg" webkit-playsinline id="bgvid" loop>
-                                            <source src="http://192.241.175.50/videos/samo.webm" type="video/webm">
-                                            <source src="http://192.241.175.50/videos/samo.mp4" type="video/mp4">
-                                        </video>
-                                        <div class="slide-overlay door">
-                                            <div class='title'>Slide 4</div>
-                                            <div class="description"> #PapaBlessUp </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                          
                             </div>
 
-                            <a class="carousel-control left" href="#carousel" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                            </a>
+                               <a class="carousel-control left" href="#carousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                    </a>
 
-                            <a class="carousel-control right" href="#carousel" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                            </a>
+                                    <a class="carousel-control right" href="#carousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                    </a>
 
-                        </div>
+                                </div>
 
-                        <a class="popup__close" href="#">X</a>
+                                <a class="popup__close" href="#">X</a>
                     </div>
                 </div>
 
                 <!--Jenn-->
-                <div class="button"  id="b2">
-                    <a href="#jenn"></a>
-                    <img src="http://www.fillmurray.com/g/300/300"/>
-                </div>
+                <figure class="button" id="b2"><img src="../Surveillance/img/jenn/object.png"/>
+                    <figcaption>
+                        <h3>Jenn Jiang</h3>
+                        <h4>CAPTURE THE CAPTURE</h4>
+                    </figcaption><a href="#jenn"></a>
+                </figure>
                 <div class="popup" id="jenn">
                     <div class="popup-inner">                               
                         <div class="popup__text">
                             <h1>Capture the Capture</h1>
                             <h2>Jenn Jiang</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+                            <p>Today, tens of thousands of cameras known as automatic number plate recognition devices are deployed at various public locations. More than 2.5 trillion images are shared or stored on the internet annually. Personal monitoring devices are fast becoming a part of many a city dweller’s everyday arsenals. Are you aware that you are being watched? Even if we wanted to stop the surveillance, could we? Capture the Capture is a system connecting a laptop camera and a nonfunctional stop button, which imparts the experience of being uncontrollably surveilled. Through the chaotic, dysfunctional interaction between the the camera output and the button input, the audience becomes painfully aware of this dynamic.</p>
                         </div>  
 
                         <!--slider-->
                         <div id="carousel2" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel" data-slide-to="1"></li>
-                                <li data-target="#carousel" data-slide-to="2"></li>
-                            </ol>
+                            <!--
+<ol class="carousel-indicators">
+<li data-target="#carousel" data-slide-to="0" class="active"></li>
+<li data-target="#carousel" data-slide-to="1"></li>
+<li data-target="#carousel" data-slide-to="2"></li>
+<li data-target="#carousel" data-slide-to="3"></li>
+<li data-target="#carousel" data-slide-to="4"></li>
+</ol>
+-->
 
                             <!-- Carousel items -->
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="slide-content">
                                         <video poster="#" webkit-playsinline id="bgvid" controls>
-                                            <source src="video/huizhong.mp4" type="video/mp4">
+                                            <source src="video/jenn.mp4" type="video/mp4">
                                         </video>
                                     </div>
 
                                 </div>
                                 <div class="item">
                                     <div class="slide-content">
-                                        <video poster="http://192.241.175.50/videos/boston.jpg" webkit-playsinline id="bgvid" loop>
-                                            <source src="http://192.241.175.50/videos/boston.webm" type="video/webm">
-                                            <source src="http://192.241.175.50/videos/boston.mp4" type="video/mp4">
+                                        <video poster="img/jenn/jenn%201.png" webkit-playsinline id="bgvid" loop>
                                         </video>
                                         <div class="slide-overlay door">
                                             <div class='title'> Slide 2 </div>
@@ -153,9 +164,7 @@
                                 </div>
                                 <div class="item">
                                     <div class="slide-content">
-                                        <video poster="http://192.241.175.50/videos/split.jpg" webkit-playsinline id="bgvid" loop>
-                                            <source src="http://192.241.175.50/videos/split.webm" type="video/webm">
-                                            <source src="http://192.241.175.50/videos/split.mp4" type="video/mp4">
+                                        <video poster="img/jenn/jenn%202.png" webkit-playsinline id="bgvid" loop>
                                         </video>
                                         <div class="slide-overlay door">
                                             <div class='title'>Slide 3</div>
@@ -163,6 +172,38 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/jenn/jenn%203.png" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/jenn/jenn%204.png" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/jenn/jenn%205.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
                             </div>
 
                             <a class="carousel-control left" href="#carousel2" data-slide="prev">
@@ -180,41 +221,43 @@
                 </div>
 
                 <!--Yao-->
-                <div class="button" id="b3">
-                    <a href="#yao"></a>
-                    <img src="http://www.fillmurray.com/g/300/300"/>
-                </div>
+                <figure class="button" id="b3"><img src="../Surveillance/img/yao/object.png"/>
+                    <figcaption>
+                        <h3>Yaozheng Wang</h3>
+                        <h4>WE HAVE NO HISTORY</h4>
+                    </figcaption><a href="#yao"></a>
+                </figure>
                 <div class="popup" id="yao">
                     <div class="popup-inner">                               
                         <div class="popup__text">
-                            <h1>blank</h1>
+                            <h1>WE HAVE NO HISTORY</h1>
                             <h2>Yaozheng Wang</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
+                            <p>In the contemporary world, surveillance has become easier to deploy by corporations, organizations, and even individuals. What are the opportunities and challenges posed by this phenomenon, and how should we face them? We Have No History explores identity, publicity, and privacy in both the physical and digital worlds. By printing the maker’s browsing history into tangible receipts with a digital signature and an identification code, it centers the conflict between surveillance and individual privacy. If anyone can see or own this information, what is reliable?</p>
                         </div>  
 
                         <!--slider-->
                         <div id="carousel3" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel" data-slide-to="1"></li>
-                                <li data-target="#carousel" data-slide-to="2"></li>
-                            </ol>
+                            <!--
+<ol class="carousel-indicators">
+<li data-target="#carousel" data-slide-to="0" class="active"></li>
+<li data-target="#carousel" data-slide-to="1"></li>
+<li data-target="#carousel" data-slide-to="2"></li>
+</ol>
+-->
 
                             <!-- Carousel items -->
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="slide-content">
                                         <video poster="#" webkit-playsinline id="bgvid" controls>
-                                            <source src="video/huizhong.mp4" type="video/mp4">
+                                            <source src="video/yao.mp4" type="video/mp4">
                                         </video>
                                     </div>
 
                                 </div>
                                 <div class="item">
                                     <div class="slide-content">
-                                        <video poster="http://192.241.175.50/videos/boston.jpg" webkit-playsinline id="bgvid" loop>
-                                            <source src="http://192.241.175.50/videos/boston.webm" type="video/webm">
-                                            <source src="http://192.241.175.50/videos/boston.mp4" type="video/mp4">
+                                        <video poster="img/yao/yao%202.png" webkit-playsinline id="bgvid" loop>
                                         </video>
                                         <div class="slide-overlay door">
                                             <div class='title'> Slide 2 </div>
@@ -224,9 +267,7 @@
                                 </div>
                                 <div class="item">
                                     <div class="slide-content">
-                                        <video poster="http://192.241.175.50/videos/split.jpg" webkit-playsinline id="bgvid" loop>
-                                            <source src="http://192.241.175.50/videos/split.webm" type="video/webm">
-                                            <source src="http://192.241.175.50/videos/split.mp4" type="video/mp4">
+                                        <video poster="img/yao/yao%204.jpg" webkit-playsinline id="bgvid" loop>
                                         </video>
                                         <div class="slide-overlay door">
                                             <div class='title'>Slide 3</div>
@@ -234,6 +275,26 @@
                                         </div>
                                     </div>
                                 </div>
+                                 <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/yao/yao%205.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>                            
+                                 <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/yao/yao%206.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>                         
                             </div>
 
                             <a class="carousel-control left" href="#carousel3" data-slide="prev">
@@ -251,29 +312,34 @@
                 </div>
 
                 <!--Huizhong-->
-                <div class="button" id="b4">
-                    <a href="#huizhong"></a>
-                    <img src="img/huizhong/object.png"/>
-                </div>
+                <figure class="button" id="b4"><img src="img/huizhong/object.png"/>
+                    <figcaption>
+                        <h3>Huizhong Zhu</h3>
+                        <h4>HER</h4>
+                    </figcaption><a href="#huizhong"></a>
+                </figure>
                 <div class="popup" id="huizhong">
                     <div class="popup-inner">                               
                         <div class="popup__text">
                             <h1>HER</h1>
                             <h2>Huizhong Zhu</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae, blandit vitae nisl. Nullam fermentum orci et erat viverra bibendum. Aliquam sed varius nibh, vitae mattis purus. Mauris elementum sapien non ullamcorper vulputate. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eget felis sit amet eros viverra pulvinar.</p>
-                            <br><br><h2><a href="https://zhz1208.github.io/HER/">→Enter HER room</a></h2>
+                            <p>The window is a boundary between private and public space. Floor-to-ceiling windows give apartment residents a good view to the outside, but also give people outside a great view of the inside. This presents a privacy issue. Why do people fear invasions of privacy? Is it because they fear that the public will piece together fragments of their personal information and figure out who they really are? A QR code has been placed on my apartment window, viewable to people standing outside. By scanning the QR code, viewers can enter my virtual room. In this room, their task is to identify what kind of person I am, and what my life is like. Different people may find different clues in this room, and may reach different conclusions.</p>
+                            <br><br>
+                            <h5>👉 <a href="https://zhz1208.github.io/HER/">enter HER room</a></h5>
                         </div>  
 
                         <!--slider-->
                         <div id="carousel4" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel" data-slide-to="1"></li>
-                                <li data-target="#carousel" data-slide-to="2"></li>
-                                <li data-target="#carousel" data-slide-to="3"></li>
-                                <li data-target="#carousel" data-slide-to="4"></li>
-                                <li data-target="#carousel" data-slide-to="5"></li>
-                            </ol>
+                            <!--
+<ol class="carousel-indicators">
+<li data-target="#carousel" data-slide-to="0" class="active"></li>
+<li data-target="#carousel" data-slide-to="1"></li>
+<li data-target="#carousel" data-slide-to="2"></li>
+<li data-target="#carousel" data-slide-to="3"></li>
+<li data-target="#carousel" data-slide-to="4"></li>
+<li data-target="#carousel" data-slide-to="5"></li>
+</ol>
+-->
 
                             <!-- Carousel items -->
                             <div class="carousel-inner">
@@ -359,9 +425,9 @@
             </div>
         </div>
 
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/index.js"></script>
+        <script src="../Surveillance/js/jquery-3.3.1.min.js"></script>
+        <script src="../Surveillance/js/bootstrap.min.js"></script>
+        <script src="../Surveillance/js/index.js"></script>
 
     </body>
 
