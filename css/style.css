@@ -19,7 +19,9 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
+    /*    font-family: 'Roboto', sans-serif;*/
+    font-family: 'Lato', sans-serif;
+    /*    font-family: 'Roboto Mono', monospace;*/
     background-color: #fff;
 }
 
