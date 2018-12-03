@@ -637,6 +637,6 @@ Large screen nav
 }
 
 a.logo-wrap {
-    position: absolute;
-    z-index: 1;
+    position: relative;
+    z-index: 0;
 }
