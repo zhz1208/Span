@@ -9,17 +9,22 @@
 
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel='stylesheet' href='https://ionicons.com/css/ionicons.min.css'>
 
         <link rel="stylesheet" href="../Surveillance/domainstyle.css"> <!-- Subdomain style -->
         <link rel="stylesheet" href="../Surveillance/video.css"> <!-- Video style -->
     </head>
 
-    <body>
+    <body onorientationchange="testOrientation();" onload="testOrientation();">
+        <!--landscape mmode-->
+        <div id="block_land">Turn your device in landscape mode.</div>
+
         <div class="bg">
+            <!--nav bar-->
             <header class='main-header'>
                 <div class="menu-wrap">
                     <!-- Logo container -->
-                    <a href='https://maxbernard.design' class="logo-wrap">
+                    <a href='../Span/index.html' class="logo-wrap">
                         <img class="logo" src="nav_img/span.svg" alt="Logo" >
                     </a>
 
@@ -41,9 +46,9 @@
                         <label for='nav-tog' class='nav-revert'></label>
 
                         <!-- Menu items -->
-                        <a href='#portfolio' class="nav-item">
+                        <div class="nav-item">
                             <img class="logo" src="nav_img/sur_act.svg" alt="Logo" >
-                        </a>
+                        </div>
                         <a href='#bio' class="nav-item">
                             <img class="logo" src="nav_img/te.svg" alt="Logo" >
                         </a>
@@ -53,9 +58,11 @@
                     </nav>
                 </div>
             </header>   
+
+            <!--showcase-->
             <div class="gallery">
                 <!--Juan-->
-                <figure class="button" id="b1"><img src="../Surveillance/img/juan/object.png"/>
+                <figure class="button" id="b1"><img src="../Surveillance/img/huizhong/Process%20Object.jpg"/>
                     <figcaption>
                         <h3>JUAN PABLO RAHAL SOTO</h3>
                         <h4>CABAZON DINOSAURS PLAQUE</h4>
@@ -69,7 +76,7 @@
                             <p>Every movement we make is tracked on a daily basis. Consciously or unconsciously, we acquire objects that have the inherent ability to surveil us. When we choose to buy a phone or a watch, we are implicitly accepting the inevitability that we’ll be tracked, and elect to be a data generator in this web of surveillance. Server Map is a visualization of seven days in the life of a server in a San Francisco restaurant called Commonwealth. Data is visualized in the form of overlapped text and imagery. It is a record of others’ desires and the physical movements (by miles or human steps) that happen in what is classified as a single pin by the GPS, a satellite-based radio navigation system owned by the United States government and operated by the United States Air Force "for peaceful civil, commercial, and scientific uses worldwide</p>
                         </div>  
 
-<!--slider-->
+                        <!--slider-->
                         <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
                             <!--
 <ol class="carousel-indicators">
@@ -83,7 +90,8 @@
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="slide-content">
-                                        <video class="video-js" poster="#" webkit-playsinline id="bgvid" controls>
+                                        <!--                                        <video class="video-fluid" poster="#" webkit-playsinline id="bgvid" controls>-->
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
                                             <source src="video/juan.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -99,20 +107,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                          
+
                             </div>
 
-                               <a class="carousel-control left" href="#carousel" data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left"></span>
-                                    </a>
+                            <a class="carousel-control left" href="#carousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
 
-                                    <a class="carousel-control right" href="#carousel" data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right"></span>
-                                    </a>
+                            <a class="carousel-control right" href="#carousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
 
-                                </div>
+                        </div>
 
-                                <a class="popup__close" href="#">X</a>
+                        <a class="popup__close" href="#">X</a>
                     </div>
                 </div>
 
@@ -128,7 +136,7 @@
                         <div class="popup__text">
                             <h1>Capture the Capture</h1>
                             <h2>Jenn Jiang</h2>
-                            <p>Today, tens of thousands of cameras known as automatic number plate recognition devices are deployed at various public locations. More than 2.5 trillion images are shared or stored on the internet annually. Personal monitoring devices are fast becoming a part of many a city dweller’s everyday arsenals. Are you aware that you are being watched? Even if we wanted to stop the surveillance, could we? Capture the Capture is a system connecting a laptop camera and a nonfunctional stop button, which imparts the experience of being uncontrollably surveilled. Through the chaotic, dysfunctional interaction between the the camera output and the button input, the audience becomes painfully aware of this dynamic.</p>
+                            <p>Today, tens of thousands of cameras known as automatic number plate recognition devices are deployed at various public locations. More than 2.5 trillion images are shared or stored on the internet annually. Personal monitoring devices are fast becoming a part of many a city dweller’s everyday arsenals. Are you aware that you are being watched? Even if we wanted to stop the surveillance, could we? <br><br>Capture the Capture is a system connecting a laptop camera and a nonfunctional stop button, which imparts the experience of being uncontrollably surveilled. Through the chaotic, dysfunctional interaction between the the camera output and the button input, the audience becomes painfully aware of this dynamic.</p>
                         </div>  
 
                         <!--slider-->
@@ -147,7 +155,7 @@
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="slide-content">
-                                        <video poster="#" webkit-playsinline id="bgvid" controls>
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
                                             <source src="video/jenn.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -203,8 +211,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                
-                                
+
+
                             </div>
 
                             <a class="carousel-control left" href="#carousel2" data-slide="prev">
@@ -233,7 +241,7 @@
                         <div class="popup__text">
                             <h1>WE HAVE NO HISTORY</h1>
                             <h2>Yaozheng Wang</h2>
-                            <p>In the contemporary world, surveillance has become easier to deploy by corporations, organizations, and even individuals. What are the opportunities and challenges posed by this phenomenon, and how should we face them? We Have No History explores identity, publicity, and privacy in both the physical and digital worlds. By printing the maker’s browsing history into tangible receipts with a digital signature and an identification code, it centers the conflict between surveillance and individual privacy. If anyone can see or own this information, what is reliable?</p>
+                            <p>In the contemporary world, surveillance has become easier to deploy by corporations, organizations, and even individuals. What are the opportunities and challenges posed by this phenomenon, and how should we face them? We Have No History explores identity, publicity, and privacy in both the physical and digital worlds. <br><br>By printing the maker’s browsing history into tangible receipts with a digital signature and an identification code, it centers the conflict between surveillance and individual privacy. If anyone can see or own this information, what is reliable?</p>
                         </div>  
 
                         <!--slider-->
@@ -250,7 +258,7 @@
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="slide-content">
-                                        <video poster="#" webkit-playsinline id="bgvid" controls>
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
                                             <source src="video/yao.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -276,7 +284,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                 <div class="item">
+                                <div class="item">
                                     <div class="slide-content">
                                         <video poster="img/yao/yao%205.jpg" webkit-playsinline id="bgvid" loop>
                                         </video>
@@ -286,7 +294,7 @@
                                         </div>
                                     </div>
                                 </div>                            
-                                 <div class="item">
+                                <div class="item">
                                     <div class="slide-content">
                                         <video poster="img/yao/yao%206.jpg" webkit-playsinline id="bgvid" loop>
                                         </video>
@@ -324,7 +332,7 @@
                         <div class="popup__text">
                             <h1>HER</h1>
                             <h2>Huizhong Zhu</h2>
-                            <p>The window is a boundary between private and public space. Floor-to-ceiling windows give apartment residents a good view to the outside, but also give people outside a great view of the inside. This presents a privacy issue. Why do people fear invasions of privacy? Is it because they fear that the public will piece together fragments of their personal information and figure out who they really are? A QR code has been placed on my apartment window, viewable to people standing outside. By scanning the QR code, viewers can enter my virtual room. In this room, their task is to identify what kind of person I am, and what my life is like. Different people may find different clues in this room, and may reach different conclusions.</p>
+                            <p>The window is a boundary between private and public space. Floor-to-ceiling windows give apartment residents a good view to the outside, but also give people outside a great view of the inside. This presents a privacy issue.<br><br> Why do people fear invasions of privacy? Is it because they fear that the public will piece together fragments of their personal information and figure out who they really are?<br><br>A QR code has been placed on my apartment window, viewable to people standing outside. By scanning the QR code, viewers can enter my virtual room. In this room, they are able to identify what kind of person I am, and what my life is like. Different people may find different clues in this room, and may reach different conclusions.</p>
                             <br><br>
                             <h5>👉 <a href="https://zhz1208.github.io/HER/">enter HER room</a></h5>
                         </div>  
@@ -346,7 +354,7 @@
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="slide-content">
-                                        <video poster="#" webkit-playsinline id="bgvid" controls>
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
                                             <source src="video/huizhong.mp4" type="video/mp4">
                                         </video>
                                     </div>
@@ -429,6 +437,7 @@
         <script src="../Surveillance/js/jquery-3.3.1.min.js"></script>
         <script src="../Surveillance/js/bootstrap.min.js"></script>
         <script src="../Surveillance/js/index.js"></script>
+        <script src='https://vjs.zencdn.net/5.4.6/video.js'></script>
 
     </body>
 
