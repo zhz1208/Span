@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        <meta charset="UTF-8">
+        <title>&lt;Identity&gt;</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Mono|Nunito" rel="stylesheet">
+
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel='stylesheet' href='https://ionicons.com/css/ionicons.min.css'>
+
+        <link rel="stylesheet" href="css/id_domainstyle.css"> <!-- Subdomain style -->
+        <link rel="stylesheet" href="css/video.css"> <!-- Video style -->
+    </head>
+
+    <body>
+
+        <div class="bg">
+            <!--nav bar-->
+            <header class='main-header'>
+                <div class="menu-wrap">
+                    <!-- Logo container -->
+                    <a href='index.html' class="logo-wrap">
+                        <img class="logo" src="nav_img/span.svg" alt="Logo" >
+                    </a>
+
+
+                    <!-- When this is checked, nav menu is dropped -->
+                    <input type='checkbox' id='nav-tog'>
+
+                    <!-- Hamburger btn -->
+                    <label for='nav-tog'  class="drop-trigger">
+                        <!-- Hamburg bars -->
+                        <span class="btn-bar top"></span>
+                        <span class='btn-bar middle'></span>
+                        <span class='btn-bar bottom'></span>
+                    </label>
+
+                    <!-- Menu -->
+                    <nav class="main-nav">
+                        <!-- This covers the whole background of the dropped menu -->
+                        <label for='nav-tog' class='nav-revert'></label>
+
+                        <!-- Menu items -->
+                        <a href='Surveillance.html' class="nav-item">
+                            <img class="logo" src="nav_img/sur.svg" alt="Logo" >
+                        </a>
+                        <a href='Territory.html' class="nav-item">
+                            <img class="logo" src="nav_img/te.svg" alt="Logo" >
+                        </a>
+                        <div class="nav-item">
+                            <img class="logo" src="nav_img/id_act.svg" alt="Logo" >
+                        </div>
+                    </nav>
+                </div>
+            </header>   
+
+            <!--showcase-->
+            <div class="gallery">
+                <!--Lingyin-->
+                <figure class="button" id="b16"><img src="img/lingyin/object.jpg"/>
+                    <figcaption>
+                        <h3>Lingyin Du</h3>
+                        <h4>SEARCHING FOR MEMORY</h4>
+                    </figcaption><a href="#lingyin"></a>
+                </figure>
+                <div class="popup" id="lingyin">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>SEARCHING FOR MEMORY</h1>
+                            <h2>Lingyin Du</h2>
+                            <p>How do digital and physical objects influence how we remember things? How do those memories inspire new trains of thought? This project encourages people to interact with objects in different ways as a design research method.</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel16" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/lingyin.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/lingyin/lingyin%201.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/lingyin/lingyin 2.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/lingyin/lingyin 3.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/lingyin/lingyin 4.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel16" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel16" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+                <!--Ricardo-->
+                <figure class="button" id="b11"><img src="img/ricardo/object.jpg"/>
+                    <figcaption>
+                        <h3>RICARDO HERNANDEZ PEREZ</h3>
+                        <h4>TRIGGERED</h4>
+                    </figcaption><a href="#ricardo"></a>
+                </figure>
+                <div class="popup" id="ricardo">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>TRIGGERED</h1>
+                            <h2>Ricardo Hernandez Perez</h2>
+                            <p>Navigating physical space can be a daunting experience for individuals who do not fall into society’s heteronormative standards. Challenging these mechanisms of control by bending gender norms puts many individuals at risk of harassment and discrimination. <br><br>As a victim of these circumstances, I created a map of spaces that trigger negative recollections of unfortunate encounters with individuals who willingly (and unwillingly) employed aggressive techniques to express their disapproval of my mode of self-expression. <i>Triggered</i> includes a map with a traveled path from home to my workspace highlighting specific moments where I came in contact with physical spaces that triggered anxiety and fear from previous experiences.</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel11" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/ricardo.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/ricardo/ricardo%201.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel11" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel11" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+                <!--Shelley-->
+                <figure class="button" id="b12"><img src="img/shelley/object.png"/>
+                    <figcaption>
+                        <h3>Shuang Tao</h3>
+                        <h4>FINDING SELF</h4>
+                    </figcaption><a href="#shelley"></a>
+                </figure>
+                <div class="popup" id="shelley">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>FINDING SELF</h1>
+                            <h2>Shuang Tao</h2>
+                            <p>What makes us...us? <i>Finding Self</i> is about self reflection. The work presents a world without prejudiced judgments. It encourages a renewed focus, both on one’s own inner world and on one’s position in the world. The boundary between the virtual and the real becomes successively less clear. Where does our authentic self reside? <i>Finding Self</i> encourages us to live in the now, and to appreciate the differences which shape us.</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel12" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/shelly.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/shelley/shelley1.jpg" webkit-playsinline id="bgvid" loop>
+                                            <source src="http://192.241.175.50/videos/boston.webm" type="video/webm">
+                                            <source src="http://192.241.175.50/videos/boston.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/shelley/shelley2.jpg" webkit-playsinline id="bgvid" loop>
+                                            <source src="http://192.241.175.50/videos/split.webm" type="video/webm">
+                                            <source src="http://192.241.175.50/videos/split.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel12" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel12" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+                <!--Max-->
+                <figure class="button" id="b13"><img src="img/max/object.jpg"/>
+                    <figcaption>
+                        <h3>MAX DEVORE WILLIAMS</h3>
+                        <h4>PANDA PROCESS</h4>
+                    </figcaption><a href="#max"></a>
+                </figure>
+                <div class="popup" id="max">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>PANDA PROCESS</h1>
+                            <h2>MAX DEVORE WILLIAMS</h2>
+                            <p>How do does a creative make their work? What is the process by which an idea turns into a finished creation? What stumbling blocks will a creative encounter, what are the methods for working through them? It can feel like an unimaginably winding road, an endless journey, an inexplicable odyssey to get to a final outcome, but it is a goal that needs to be reached and somehow things get done. In trying to understand an individual process, and the patterns and blocks that were being regularly encountered, a long rant about creation became a circular handmade book. A highly emotional panda is the protagonist of this creative journey, traveling through obstacles from idea to completion, and then back to idea again in a never ending journey of repeating cycles.</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel13" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/max.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/max/max%201.jpg" webkit-playsinline id="bgvid" loop>
+                                            <source src="http://192.241.175.50/videos/boston.webm" type="video/webm">
+                                            <source src="http://192.241.175.50/videos/boston.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/max/max%202.jpg" webkit-playsinline id="bgvid" loop>
+                                            <source src="http://192.241.175.50/videos/boston.webm" type="video/webm">
+                                            <source src="http://192.241.175.50/videos/boston.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel13" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel13" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+                <!--Juan Pablo-->
+                <figure class="button" id="b14"><img src="img/juanpablo/object.jpg"/>
+                    <figcaption>
+                        <h3>Juan Pablo Rahal Soto</h3>
+                        <h4>CABAZON DINOSAURS PLAQUE</h4>
+                    </figcaption><a href="#juanpablo"></a>
+                </figure>
+                <div class="popup" id="juanpablo">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>CABAZON DINOSAURS PLAQUE</h1>
+                            <h2>Juan Pablo Rahal Soto</h2>
+                            <p>Since their construction in the 1960’s, the Cabazon Dinosaurs have animated both the physical space of their surroundings and the pop culture space of the film and multimedia they’ve inspired. Some visitors happen upon the dinosaurs circumstantially, while some seek them out specifically for the photo op. Spectators’ obsession with this site reflects a contemporary preoccupation with the simulacrum, as a projection of our desires. <i>The Cabazon Dinosaurs Plaque</i> aims to distort the distinction between fiction and reality. A physical and digital plaque that tells a different version of the story, it distorts not just the dinosaurs’ history but our human history as well. <i>The Cabazon Dinosaurs Plaque</i> proposes a world where the origin of life resides in the USA. What is reality and what is fiction?</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel14" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/juanpablo.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/juanpablo/juan%20Pablo%201.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel14" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel14" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+                <!--Yuchen-->
+                <figure class="button" id="b15"><img src="img/yuchen/object.jpg"/>
+                    <figcaption>
+                        <h3>Yuchen Sun</h3>
+                        <h4>A DAY IN ITS LIFE</h4>
+                    </figcaption><a href="#yuchen"></a>
+                </figure>
+                <div class="popup" id="yuchen">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>A DAY IN ITS LIFE</h1>
+                            <h2>Yuchen Sun</h2>
+                            <p>Smartphones have transcended their utilitarian nature. Smartphones are tools of global reach, discovery, and boundless support. We often willingly ignore our overt reliance on these devices. <br><br><i>A Day in its Life</i> interrupts this codependence by providing new contexts for “taking care of one’s phone”. Viewers are invited to place their phones in the designed receptacle, and to experience the differential filtering of data it produces. The hope is to progress from a feeling of frustration to one of satisfaction.</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel15" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/yuchen.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/yuchen/yuchen%201.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/yuchen/yuchen%202.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/yuchen/yuchen%203.jpg" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/yuchen/yuchen%204.png" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel15" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel15" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src='https://vjs.zencdn.net/5.4.6/video.js'></script>
+
+    </body>
+
+</html>

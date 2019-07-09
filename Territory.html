@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+    <head>
+        <meta charset="UTF-8">
+        <title>&lt;Territory&gt;</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Lato|Roboto|Roboto+Mono|Nunito" rel="stylesheet">
+
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel='stylesheet' href='https://ionicons.com/css/ionicons.min.css'>
+
+        <link rel="stylesheet" href="css/te_domainstyle.css"> <!-- Subdomain style -->
+        <link rel="stylesheet" href="css/video.css"> <!-- Video style -->
+    </head>
+
+    <body>
+
+        <div class="bg">
+            <!--nav bar-->
+            <header class='main-header'>
+                <div class="menu-wrap">
+                    <!-- Logo container -->
+                    <a href='index.html' class="logo-wrap">
+                        <img class="logo" src="nav_img/span.svg" alt="Logo" >
+                    </a>
+
+
+                    <!-- When this is checked, nav menu is dropped -->
+                    <input type='checkbox' id='nav-tog'>
+
+                    <!-- Hamburger btn -->
+                    <label for='nav-tog'  class="drop-trigger">
+                        <!-- Hamburg bars -->
+                        <span class="btn-bar top"></span>
+                        <span class='btn-bar middle'></span>
+                        <span class='btn-bar bottom'></span>
+                    </label>
+
+                    <!-- Menu -->
+                    <nav class="main-nav">
+                        <!-- This covers the whole background of the dropped menu -->
+                        <label for='nav-tog' class='nav-revert'></label>
+
+                        <!-- Menu items -->
+                        <a href='Surveillance.html'  class="nav-item">
+                            <img class="logo" src="nav_img/sur.svg" alt="Logo" >
+                        </a>
+                        <div class="nav-item">
+                            <img class="logo" src="nav_img/te_act.svg" alt="Logo" >
+                        </div>
+                        <a href='Identity.html' class="nav-item">
+                            <img class="logo" src="nav_img/id.svg" alt="Logo" >
+                        </a>
+                    </nav>
+                </div>
+            </header>   
+
+            <!--showcase-->
+            <div class="gallery">
+                <!--Annika-->
+                <figure class="button" id="b5"><img src="img/annika/object.png"/>
+                    <figcaption>
+                        <h3>ANNIKA BASTACKY</h3>
+                        <h4>TORP Oakland</h4>
+                    </figcaption><a href="#annika"></a>
+                </figure>
+                <div class="popup" id="annika">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>TORP Oakland</h1>
+                            <h2>Annika Bastacky</h2>
+                            <p><i>Territory of Radical Potentiality (TORP) Oakland</i> is a set of speculative materials for establishing an extrajudicial territory within the boundaries of any US port. A not insignificant percentage of container ships transport at least one crew member who lacks a US D-1 visa, and is therefore barred from disembarking, or setting foot on US soil. TORPs provide these seafarers the opportunity to dwell on land, with both feet firmly on solid ground. <i>TORP Oakland</i> comprises a toolkit and manual for territory establishment and maintenance.</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel5" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+                            </ol>
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/annika.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/annika/annika 1.png" webkit-playsinline id="bgvid" loop>
+                                            <source src="http://192.241.175.50/videos/boston.webm" type="video/webm">
+                                            <source src="http://192.241.175.50/videos/boston.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel5" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel5" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+                <!--Becca-->
+                <figure class="button" id="b6"><img src="img/becca/object.png"/>
+                    <figcaption>
+                        <h3>BECCA HANSON</h3>
+                        <h4>Pet Park</h4>
+                    </figcaption><a href="#becca"></a>
+                </figure>
+                <div class="popup" id="becca">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>Pet Park</h1>
+                            <h2>Becca Hanson</h2>
+                            <p><i>Pet Park</i> is a mobile park for an imaginary future scenario in which green spaces are harder to come by. These personalized patches of park are where people get their nature kicks.</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel6" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/becca.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/becca/becca 1.png" webkit-playsinline id="bgvid" loop>
+
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/becca/becca%202.png" webkit-playsinline id="bgvid" loop>
+
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel6" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel6" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+                <!--Jiahao-->
+                <figure class="button" id="b7"><img src="img/jiahao/object.png"/>
+                    <figcaption>
+                        <h3>Jiahao He</h3>
+                        <h4>INTERSECTION</h4>
+                    </figcaption><a href="#jiahao"></a>
+                </figure>
+                <div class="popup" id="jiahao">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>INTERSECTION</h1>
+                            <h2>Jiahao He</h2>
+                            <p><i>Intersection</i> explores the layering of physical and digital space, as a metaphor for the way I explore the city of San Francisco. The digital and physical worlds are coincident, and cannot be separated. We often browse the internet for information and reviews about a particular place, and plan to visit it later based on that information. The experience of optically combining graphic representations of both worlds underscores their dissonance while creating a new combined world.</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel7" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/jiahao.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/jiahao/jiahao%201.JPG" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/jiahao/jiahao%202.JPG" webkit-playsinline id="bgvid" loop>
+                                            <source src="http://192.241.175.50/videos/split.webm" type="video/webm">
+                                            <source src="http://192.241.175.50/videos/split.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/jiahao/jiahao%203.JPG" webkit-playsinline id="bgvid" loop>
+                                            <source src="http://192.241.175.50/videos/split.webm" type="video/webm">
+                                            <source src="http://192.241.175.50/videos/split.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/jiahao/Jiahao%204.JPG" webkit-playsinline id="bgvid" loop>
+                                            <source src="http://192.241.175.50/videos/split.webm" type="video/webm">
+                                            <source src="http://192.241.175.50/videos/split.mp4" type="video/mp4">
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel7" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel7" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+                <!--Xinxin-->
+                <figure class="button" id="b8"><img src="img/xinxin/object.jpg"/>
+                    <figcaption>
+                        <h3>Xinxin Wang</h3>
+                        <h4>SOUND EXPERIENCE</h4>
+                    </figcaption><a href="#xinxin"></a>
+                </figure>
+                <div class="popup" id="xinxin">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>SOUND EXPERIENCE</h1>
+                            <h2>Xinxin Wang</h2>
+                            <p><i>Sound Experience</i> surfaces the noise inherent in our living environment, which we create but often tune out. Viewers can listen to digitally augmented ambient sound from Union Square, as a way to approach their environment from a new perspective. <i>Sound Experience</i> translates the organic human noise into “natural” sounds (birds chirping, etc) of a similar audio frequency. It sets up a language rule of translation. Because many pedestrians use headphones to filter out the noise of the city, headphones play an important role in transporting viewers from the cacophony of the urban landscape to the supposed bucolic refuge of the natural landscape.</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel8" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/xinxin.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/xinxin/xinxin1.JPG" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/xinxin/xinxin2.png" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/xinxin/xinxin3.png" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/xinxin/xinxin4.JPG" webkit-playsinline id="bgvid" loop>
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel8" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel8" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+                <!--Anna-->
+                <figure class="button" id="b9"><img src="img/anna/object.jpg"/>
+                    <figcaption>
+                        <h3>Xinyue Song</h3>
+                        <h4>The Walk</h4>
+                    </figcaption><a href="#anna"></a>
+                </figure>
+                <div class="popup" id="anna">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>The Walk</h1>
+                            <h2>Xinyue Song</h2>
+                            <p>When we travel from one location to another within the city, we prioritize speed and expediency. But the walk can also be a fulfilling experience in its own right, full of excitement and diverse points of interest. People are what make a city unique. Each walk we take throughout the city should be customized to our individual personalities, not unified by convenience. <br><br><i>The Walk</i> is an app with which to get lost in the city, and to create their own route map.</p>
+                        </div>  
+
+                        <!--slider-->
+                        <div id="carousel9" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/anna.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/anna/anna1.jpg" webkit-playsinline id="bgvid" loop>
+
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/anna/anna2.png" webkit-playsinline id="bgvid" loop>
+
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel9" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel9" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+                <!--Pohsun-->
+                <figure class="button" id="b10"><img src="img/pohsun/object.jpg"/>
+                    <figcaption>
+                        <h3>PO-HSUN YU</h3>
+                        <h4>THE TINY ADVENTURE</h4>
+                    </figcaption><a href="#pohsun"></a>
+                </figure>
+                <div class="popup" id="pohsun">
+                    <div class="popup-inner">                               
+                        <div class="popup__text">
+                            <h1>THE TINY ADVENTURE</h1>
+                            <h2>Po-Hsun Yu</h2>
+                            <p><i>The Tiny Adventure</i> expresses my life trajectory in an intuitive way. When we use maps to document our daily lives, they begin to learn the places we've searched and visited. No two people will see the same map, even if it’s viewed through the same app. <i>The Tiny Adventure</i> is a digital map that grows over time. It generates unique blocks or even cities.</p>
+                        </div>  
+
+                       <!--slider-->
+                        <div id="carousel10" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <div class="slide-content">
+                                        <video class="video-js" controls preload="auto" poster="#" data-setup='' loop>
+                                            <source src="video/pohsun.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/pohsun/pohsun1.jpg" webkit-playsinline id="bgvid" loop>
+
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'> Slide 2 </div>
+                                            <div class="description"> The Second Description </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/pohsun/pohsun2.jpg" webkit-playsinline id="bgvid" loop>
+
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slide-content">
+                                        <video poster="img/pohsun/pohsun3.jpg" webkit-playsinline id="bgvid" loop>
+
+                                        </video>
+                                        <div class="slide-overlay door">
+                                            <div class='title'>Slide 3</div>
+                                            <div class="description"> #AnotherOne #AndAnotherOne</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control left" href="#carousel10" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+
+                            <a class="carousel-control right" href="#carousel10" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+
+                        </div>
+
+                        <a class="popup__close" href="#">X</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+        <script src='https://vjs.zencdn.net/5.4.6/video.js'></script>
+
+    </body>
+
+</html>
